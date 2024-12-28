@@ -1,0 +1,74 @@
+# Maven target directory
+/target/
+
+# IntelliJ IDEA and VSCode files
+/.idea/
+/.vscode/
+/*.iml
+
+# Logs
+*.log
+/logs/
+/*.log.*
+
+# Compiled class files
+*.class
+
+# Temporary files
+*.swp
+*.swo
+*.DS_Store
+*.tmp
+*.bak
+
+# Maven specific
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+.settings/
+*.maven-cache
+
+# Spring Boot specific
+/spring.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Secrets and sensitive files
+/secrets/
+/config/application-*.properties
+/config/application-*.yml
+
+# Operating System files
+Thumbs.db
+.DS_Store
+
+# Kotlin specific
+/out/
+*.kotlin_metadata
+
+# Build directories
+/build/
+
+# Test reports
+/test-output/
+/test-results/
+/surefire-reports/
+/failsafe-reports/
+
+# Coverage reports
+/coverage/
+/jacoco.exec
+
+# Dependency directories
+/node_modules/
+/bower_components/
+/.cocoapods/
+
+# JetBrains IDEs (optional if not using IntelliJ IDEA)
+/.idea/
+/*.iml
+/modules.xml
+/workspace.xml
+/.idea/
