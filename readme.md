@@ -36,6 +36,44 @@ You can publish to a remote repository like Maven Central, JFrog Artifactory, or
 ./mvnw publish
 ```
 
+### Use the Reusable JAR in Another Project
+In your consuming project, include the JAR as a dependency.
+#### For Local Repository:
+If published locally:
+
+Add the repository URL and dependency:
+``` bash
+    <repositories>
+        <repository>
+            <id>local</id>
+            <url>file://C:/Users/shubh/.m2/repository</url>
+        </repository>
+    </repositories>
+....
+    <dependency>
+        <groupId>springboot.library.domain</groupId>
+		<artifactId>springboot-library-domain</artifactId>
+		<version>1.0.0</version>
+    </dependency>
+```
+
+#### For Remote Repository:
+Add the repository URL and dependency:
+``` bash
+    <repositories>
+        <repository>
+            <id>example-repo</id>
+            <url>https://repo.example.com/releases</url>
+        </repository>
+    </repositories>
+....
+    <dependency>
+        <groupId>springboot.library.domain</groupId>
+		<artifactId>springboot-library-domain</artifactId>
+		<version>1.0.0</version>
+    </dependency>
+```
+
 ## Create public and private certificate pem file
 ``` bash
 openssl genrsa -out private.pem 2048
